@@ -8,7 +8,7 @@ namespace Generics
 {
     internal class FindMax
     {
-        public int findMaxIntValue(int firstValue, int secondValue, int thirdValue)
+        public double findMaxDoubleValue(double firstValue, double secondValue, double thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {

@@ -12,7 +12,7 @@ namespace Generics
         {
             Console.WriteLine("Welcome to Find Maximum Using Generics");
             FindMax findMaximum = new FindMax();
-            Console.WriteLine("Maximum Number is: " + findMaximum.findMaxIntValue(45, 89, 67));
+            Console.WriteLine("Maximum Number is: " + findMaximum.findMaxDoubleValue(8.9, 5.7, 3.4));
             Console.ReadLine();
         }
     }
