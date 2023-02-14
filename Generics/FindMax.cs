@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class FindMax
+    public class FindMax
     {
-        public string findMaxStringValue(string firstValue, string secondValue, string thirdValue)
+        public T findMaxValue<T>(T firstValue, T secondValue, T thirdValue)
         {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+            if (Comparer<T>.Default.Compare(firstValue, secondValue) > 0 && Comparer<T>.Default.Compare(firstValue, thirdValue) > 0)
             {
                 return firstValue;
             }
-            else if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+            else if (Comparer<T>.Default.Compare(secondValue, firstValue) > 0 && Comparer<T>.Default.Compare(secondValue, thirdValue) > 0)
             {
                 return secondValue;
             }
