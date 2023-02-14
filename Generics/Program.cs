@@ -11,10 +11,12 @@ namespace Generics
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Find Maximum Using Generics");
-            FindMax findMaximum = new FindMax();
-            Console.WriteLine("\nMaximum Integer value is : " + findMaximum.findMaxValue<int>(599, 149, 853));
-            Console.WriteLine("\nMaximum Floating value is : " + findMaximum.findMaxValue<float>(9.3f, 6.5f, 5.8f));
-            Console.WriteLine("\nMaximum String value is: " + findMaximum.findMaxValue<string>("Pooja","Abhi","Harshi"));
+            FindMaximum<int> findIntMax = new FindMaximum<int>();
+            FindMaximum<float> findMaximumFloat = new FindMaximum<float>();
+            FindMaximum<string> findstring = new FindMaximum<string>();
+            Console.WriteLine("\nMaximum Integer value is : " + findIntMax.findMaxValue(599, 149, 853));
+            Console.WriteLine("\nMaximum Floating value is : " + findMaximumFloat.findMaxValue(9.3f, 6.5f, 5.8f));
+            Console.WriteLine("\nMaximum String value is: " + findstring.findMaxValue("Pooja","Abhi","Harshi"));
             Console.ReadLine();
         }
     }
